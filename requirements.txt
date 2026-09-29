@@ -1,0 +1,4 @@
+customtkinter>=5.2
+minecraft-launcher-lib>=6.0
+pypresence>=4.3
+pillow>=10
