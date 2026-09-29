@@ -132,14 +132,14 @@ python luna_launcher.py
 
 1. Укажи ссылку на `latest.json` — либо в `UPDATE_URL` в `luna_launcher.py` (значение по умолчанию для всех),
    либо в **⚙ Настройки → Обновления** (только у себя):
-   `https://raw.githubusercontent.com/ТЫ/LunaLauncher/main/latest.json`
+   `https://raw.githubusercontent.com/FoFPZ/LunaLauncher/main/latest.json`
 2. Подними `APP_VERSION`, допиши запись в `CHANGELOG`.
 3. Собери `LunaLauncher.exe`, выложи его в **Releases**.
 4. Обнови `latest.json`:
    ```json
    {
      "version": "0.0.6",
-     "url": "https://github.com/ТЫ/LunaLauncher/releases/latest/download/LunaLauncher.exe",
+     "url": "https://github.com/FoFPZ/LunaLauncher/releases/latest/download/LunaLauncher.exe",
      "notes": "Что нового"
    }
    ```
