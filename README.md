@@ -8,7 +8,7 @@
 
 Vanilla · Fabric · Forge &nbsp;|&nbsp; версии 1.0 → 26.3 &nbsp;|&nbsp; свои ники &nbsp;|&nbsp; сборки с модами &nbsp;|&nbsp; Discord Rich Presence &nbsp;|&nbsp; авто‑обновление
 
-[![Version](https://img.shields.io/badge/version-0.0.6-9b6dff?style=for-the-badge)](#-история-версий)
+[![Version](https://img.shields.io/badge/version-0.1.1-9b6dff?style=for-the-badge)](#-история-версий)
 [![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-221846?style=for-the-badge&logo=windows)](#-установка)
 [![Python](https://img.shields.io/badge/python-3.10%2B-160f2e?style=for-the-badge&logo=python)](#-запуск-из-исходников)
 [![License](https://img.shields.io/badge/license-MIT-5ee1a2?style=for-the-badge)](LICENSE)
