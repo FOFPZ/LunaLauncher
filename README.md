@@ -122,47 +122,6 @@ python luna_launcher.py
 
 ---
 
-## 🔄 Обновления
-
-Кнопка **🔄 Обновления · vX.Y.Z** в левой панели открывает историю версий и проверку новой.
-При запуске лаунчер проверяет обновления сам — если есть новая версия, кнопка подсветится **🔔 Доступно vX.Y.Z!**. Нажми **⬇ Обновить** — лаунчер скачает exe, заменит себя и перезапустится.
-
-<details>
-<summary><b>Для разработчика: как выпускать обновления</b></summary>
-
-1. Укажи ссылку на `latest.json` — либо в `UPDATE_URL` в `luna_launcher.py` (значение по умолчанию для всех),
-   либо в **⚙ Настройки → Обновления** (только у себя):
-   `https://raw.githubusercontent.com/FoFPZ/LunaLauncher/main/latest.json`
-2. Подними `APP_VERSION`, допиши запись в `CHANGELOG`.
-3. Собери `LunaLauncher.exe`, выложи его в **Releases**.
-4. Обнови `latest.json`:
-   ```json
-   {
-     "version": "0.0.6",
-     "url": "https://github.com/FoFPZ/LunaLauncher/releases/latest/download/LunaLauncher.exe",
-     "notes": "Что нового"
-   }
-   ```
-</details>
-
----
-
-## 🔨 Сборка exe
-
-**Локально (Windows):** двойной клик по `build_exe.bat` → через пару минут появится `dist\LunaLauncher.exe`.
-
-**Автоматически:** в репозитории есть `.github/workflows/build.yml` — при каждом пуше в `main` GitHub Actions соберёт exe (вкладка *Actions → артефакт LunaLauncher*).
-
-Вручную:
-
-```bash
-pip install pyinstaller
-pyinstaller --onefile --windowed --name LunaLauncher --icon assets/logo.ico ^
-  --add-data "assets;assets" --collect-all customtkinter --hidden-import pypresence luna_launcher.py
-```
-
----
-
 ## 🛠 Технологии
 
 - [Python 3](https://python.org) + [CustomTkinter](https://github.com/TomSchimansky/CustomTkinter) — интерфейс
@@ -170,21 +129,6 @@ pyinstaller --onefile --windowed --name LunaLauncher --icon assets/logo.ico ^
 - [pypresence](https://github.com/qwertyquerty/pypresence) — Discord Rich Presence
 - [Pillow](https://python-pillow.org) — графика
 - [PyInstaller](https://pyinstaller.org) — сборка в exe
-
----
-
-## 📋 История версий
-
-| Версия | Что нового |
-|---|---|
-| **0.0.6** | Окно «Настройки» · Лог в файл · RAM по реальной памяти · Discord ID и URL обновлений в конфиге |
-| **0.0.5** | Авто‑обновление из лаунчера · Сборки с отдельными папками модов · «+ Добавить моды» |
-| **0.0.4** | Окно «Обновления» с историей версий · Сборка в exe · Фикс Discord на Windows |
-| **0.0.3** | Тема Purple Moon · Логотип без фона · Единый Discord ID |
-| **0.0.2** | Убраны предупреждения asyncio · run.bat / run.sh |
-| **0.0.1** | Первый выпуск: Vanilla / Fabric / Forge 1.0–26.3, ники, Discord RPC, RAM, консоль |
-
-Полная история — в самом лаунчере, кнопка **🔄 Обновления**.
 
 ---
 
