@@ -1,3 +1,5 @@
+## !ПРОЕКТ ЗАКРЫТ!
+
 <div align="center">
 
 <img src="assets/discord_icon.png" width="140" alt="Luna Launcher">
